@@ -19,20 +19,20 @@ print(df['OvertimePay'].max())
 # What is the job title of JOSEPH DRISCOLL ? Note: Use all caps,
 # otherwise you may get an answer that doesn't match up (there is also a lowercase Joseph Driscoll).
 print("What is the job title of JOSEPH DRISCOLL?")
-print(df.loc[df['EmployeeName'] == 'JOSEPH DRISCOLL']['JobTitle'])
+print(df[df['EmployeeName'] == 'JOSEPH DRISCOLL']['JobTitle'])
 # How much does JOSEPH DRISCOLL make (including benefits)?
 print("How much does JOSEPH DRISCOLL make (including benefits)?")
-print(df.loc[df['EmployeeName'] == 'JOSEPH DRISCOLL']['TotalPayBenefits'])
+print(df[df['EmployeeName'] == 'JOSEPH DRISCOLL']['TotalPayBenefits'])
 # What is the name of highest paid person (including benefits)?
 print("What is the name of highest paid person (including benefits)?")
-print(df.loc[df['TotalPayBenefits'].max() == df['TotalPayBenefits']])
+print(df[df['TotalPayBenefits'].max() == df['TotalPayBenefits']])
 # What is the name of lowest paid person (including benefits)?
 print("What is the name of lowest paid person (including benefits)?")
-print(df.loc[df['TotalPayBenefits'].min() == df['TotalPayBenefits']])
+print(df[df['TotalPayBenefits'].min() == df['TotalPayBenefits']])
 # What was the average (mean) BasePay of all employees per year? (2011-2014) ?
 print("What was the average (mean) BasePay of all employees per year? (2011-2014)?")
 for i in range(2011, 2015):
-    print(df.loc[df['Year'] == i]['BasePay'].mean())
+    print(df[df['Year'] == i]['BasePay'].mean())
 # How many unique job titles are there?
 print("How many unique job titles are there?")
 print(df['JobTitle'].nunique())
@@ -49,4 +49,6 @@ jobs = df["JobTitle"].tolist()
 print(len(list(filter(lambda x: 'CHIEF' in x.upper(), jobs))))
 # Is there a correlation between length of the Job Title string and Salary?
 print("Is there a correlation between length of the Job Title string and Salary?")
-
+df['title_len'] = df['JobTitle'].apply(len)
+print(df[['title_len', 'TotalPayBenefits']].corr())
+print("Answer is no, there is no correlation.")
