@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff919dde-b660-4d5a-acb5-9b5bef5e54b2" name="Changes" comment="Exercise started!">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ff919dde-b660-4d5a-acb5-9b5bef5e54b2" name="Changes" comment="Halfway there">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SF Salaries.py" beforeDir="false" afterPath="$PROJECT_DIR$/SF Salaries.py" afterDir="false" />
     </list>
@@ -22,8 +21,21 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Fadeyboi"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Fadeyboi/SF_Salaries_Exercise",
+    "accountId": "047a14b2-a95f-4c80-af58-8546c8d31ab1"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 0
 }]]></component>
@@ -63,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713534705405</updated>
-      <workItem from="1713534707136" duration="2263000" />
+      <workItem from="1713534707136" duration="4355000" />
     </task>
     <task id="LOCAL-00001" summary="Exercise started!">
       <option name="closed" value="true" />
@@ -73,7 +85,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713534976895</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Halfway there">
+      <option name="closed" value="true" />
+      <created>1713537273467</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713537273467</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,9 +101,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Exercise started!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exercise started!" />
+    <MESSAGE value="Halfway there" />
+    <option name="LAST_COMMIT_MESSAGE" value="Halfway there" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SF_Salaries$SF_Salaries.coverage" NAME="SF Salaries Coverage Results" MODIFIED="1713536982401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SF_Salaries$SF_Salaries.coverage" NAME="SF Salaries Coverage Results" MODIFIED="1713539062438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

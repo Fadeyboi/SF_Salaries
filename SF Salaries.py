@@ -1,5 +1,6 @@
 # Import pandas as pd.
 import pandas as pd
+import re
 pd.set_option('display.width', 500)
 pd.set_option('display.max_columns', None)
 
@@ -34,3 +35,18 @@ for i in range(2011, 2015):
     print(df.loc[df['Year'] == i]['BasePay'].mean())
 # How many unique job titles are there?
 print("How many unique job titles are there?")
+print(df['JobTitle'].nunique())
+# What are the top 5 most common jobs?
+print("What are the top 5 most common jobs?")
+print(df['JobTitle'].value_counts().head())
+# How many Job Titles were represented by only one person in 2013? (e.g. Job Titles with only one occurrence in 2013?)
+print("How many Job Titles were represented by only one "
+      "person in 2013? (e.g. Job Titles with only one occurrence in 2013?)")
+print(sum(df[df['Year'] == 2013]['JobTitle'].value_counts() == 1))
+# How many people have the word Chief in their job title?
+print("How many people have the word Chief in their job title?")
+jobs = df["JobTitle"].tolist()
+print(len(list(filter(lambda x: 'CHIEF' in x.upper(), jobs))))
+# Is there a correlation between length of the Job Title string and Salary?
+print("Is there a correlation between length of the Job Title string and Salary?")
+
